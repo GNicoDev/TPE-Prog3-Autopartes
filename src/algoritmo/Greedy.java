@@ -4,7 +4,12 @@ import src.modelo.Maquina;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+ * La estrategia greedy que utilizare, es seleccionar la máquina que maximiza la producción sin
+ * exceder la cantidad total requerida. Para ello se deberan tener las maquinas ordenadas segun
+ * produccion,y en cada paso, ir eligiendo la que más piezas produzca sin sobrepasar el objetivo e ir
+ * decontando del total para la siguiente eleccion
+ * */
 public class Greedy {
     private static int candidatosEvaluados; // Contador de candidatos considerados
 

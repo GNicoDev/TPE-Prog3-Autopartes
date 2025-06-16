@@ -1,7 +1,7 @@
 package src.modelo;
 
 import java.util.List;
-
+// Esta clase es la encargada de almacenar los datos obtenidos desde la clase LectorArchivo.java
 public class DatosMaquina {
     private int piezasTotales;
     private List<Maquina> maquinas;

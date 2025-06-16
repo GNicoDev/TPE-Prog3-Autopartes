@@ -4,6 +4,33 @@ import src.modelo.Maquina;
 
 import java.util.ArrayList;
 import java.util.List;
+/*
+ * Algoritmo de Backtracking para la selección óptima de máquinas.
+ *
+ El estado final se alcanza cuando la producción total cumple con la cantidad requerida, priorizando
+ la combinación con menos máquinas activadas (metodo esMejorSolucion es quien define esto). Para mejorar
+ la eficiencia, se aplican podas estratégicas, evitando explorar combinaciones que excedan la producción
+ necesaria o aquellas que ya usan más máquinas que una solución previa. Además, ordenar las máquinas de
+ mayor a menor producción reduce la profundidad del árbol y optimiza la búsqueda
+
+ */
+
+/*PseudoCodigo:
+Backtrack (solucionActual, mejorSolucion,listMaquinas, cantidaPiezas)
+if solucionActual es solucion -> cubre la cantidad de piesas a producir
+    if cantidadPiezas == 0
+        mejorSolucion = solucionActual
+    else
+        foreach(maquina: ListMaquinas)
+            if cantPiezas - maquina.getProduccion >= 0
+                solucionActual.add(maquina)
+                cantPiezas-=maquina.getProduccion()
+                if esMejorselecion(solucionActual)
+                    backTracking (solucionActual, mejorSolucion, listMaquinas, cantPiezas)
+                canPiezas+= maquina.getProduccion()
+                solucionActual.remove(maquina)
+
+ */
 
 public class Backtraking {
     private static int estadosGenerados; // Contador de estados explorados
