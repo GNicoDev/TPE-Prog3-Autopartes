@@ -22,7 +22,7 @@ El código se organiza en **las siguientes clases**:
 
 ##  **Funcionamiento Interno**
 ###  ** 1- Proceso de Ejecución**
-1. Se carga la lista de máquinas obtenida desde el archivo [`configuracion.txt`](https://github.com/GNicoDev/TPE-Programacion3-Autopartes/blob/main/configuracion.txt) en  `DatosMaquina` para realizar los procesos corespondientes.
+1. Se carga la lista de máquinas obtenida desde el archivo [`configuracion.txt`](https://github.com/GNicoDev/TPE-Prog3-Autopartes/blob/main/data/configuracion.txt) en  `DatosMaquina` para realizar los procesos corespondientes.
 3. Se ejecutan los algoritmos **Greedy y Backtracking**, obteniendo sus respectivas soluciones.
 4. Se comparan los resultados y se presentan con `Vista`.
 
