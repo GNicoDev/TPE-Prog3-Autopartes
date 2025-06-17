@@ -21,7 +21,7 @@ public class Vista {
     public void mostrarSolucion(List<Maquina> datos, String titulo, int costoComputacional) {
         System.out.println("\n===== SOLUCIÓN " + titulo + " =====");
 
-        if (datos.isEmpty()) {
+        if (datos == null) {
             System.out.println(" No se encontró una solución con el algoritmo " + titulo.toLowerCase() + ".");
         } else {
             System.out.println("*** Máquinas seleccionadas:");
@@ -34,10 +34,11 @@ public class Vista {
 
             System.out.println("\n*** Total de piezas producidas: " + totalProduccion);
             System.out.println("*** Máquinas puestas en funcionamiento: " + datos.size());
+            System.out.println("*** Métrica (Costo computacional): " + costoComputacional);
         }
-
-        System.out.println("*** Métrica (Costo computacional): " + costoComputacional);
         System.out.println("==============================\n");
+
+
     }
 
 }
